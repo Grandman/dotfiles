@@ -340,7 +340,7 @@ vmap <Leader>P "+P
 
 nmap <C-i> :NERDTreeFind<CR>
 " nmap <silent> <leader><leader> :NERDTreeToggle<CR>
-nmap <silent> <leader><leader> :CocCommand explorer --toggle --file-columns=diagnosticError:git:selection:clip:indent:icon:filename;filename;fullpath;size;modified;readonly;created;modified;accessed<CR>
+nmap <silent> <leader><leader> :CocCommand explorer<CR>
 
 let NERDTreeIgnore = ['\.pyc$', '\.retry$']
 
@@ -445,7 +445,8 @@ let g:coc_global_extensions = [
       \ 'coc-pairs',
       \ 'coc-marketplace',
       \ 'coc-explorer',
-      \ 'coc-sh'
+      \ 'coc-sh',
+      \ 'coc-solargraph'
       \]
 function! s:check_back_space() abort
   let col = col('.') - 1
